@@ -33,7 +33,7 @@ public class Duck_Movement : GunSelection_Controller
         m_Gun = m_Test.m_GetGunNumber();
 
         // Invokes DuckMovement repeatedly until the duck is dead or shot.
-        InvokeRepeating("duckMovement", 0.5f, 0.3f);
+        InvokeRepeating("duckMovement", 0.5f, 0.2f);
     }
 
 
@@ -54,25 +54,25 @@ public class Duck_Movement : GunSelection_Controller
         // Integer variable declared to get the Y position of the enemy. 
         int m_vectorY = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
-        if (m_vectorX == -7.0)
-        {
-            transform.Rotate(new Vector3(0, 180, 0));
-        }
-        else if (m_vectorX == 7.0)
-        {
-            transform.Rotate(new Vector3(0, 180, 0));
-        }
+        //if (m_vectorX == -7.0)
+        //{
+        //    transform.Rotate(new Vector3(0, 180, 0));
+        //}
+        //else if (m_vectorX == 7.0)
+        //{
+        //    transform.Rotate(new Vector3(0, 180, 0));
+        //}
         // Boundaries of the duck to move between the screen.
-        if (m_vectorX <= -7.2)
+        if (m_vectorX <= -8.4)
         {
             m_PositionX = 0.6F;
         }
-        else if (m_vectorX >= 7.2)
+        else if (m_vectorX >= 8.4)
         {
             m_PositionX = -0.6F;
         }
 
-        if (m_vectorY <= -3)
+        if (m_vectorY <= -2.6)
         {
             m_PositionY = 1F;
         }

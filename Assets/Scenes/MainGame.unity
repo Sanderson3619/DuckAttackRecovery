@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cede70ba50bda548b239d801d30c8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy: {fileID: 1312872600176922, guid: d78ced32ee2ab4a4fb1de6b406664b27, type: 2}
+  m_enemy: {fileID: 1831560715705202, guid: b41bdd3e7501a3f46871bbd752d72366, type: 2}
   m_SpecialSpawnPoints:
   - {fileID: 993187834}
   m_SpawnTime: 8
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cede70ba50bda548b239d801d30c8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy: {fileID: 1652459349442726, guid: 4126778886b50fe4196b48a50adbd281, type: 2}
+  m_enemy: {fileID: 1090667583921334, guid: ab1381c4cc4284a41a7fdc35cd4cf2d8, type: 2}
   m_SpecialSpawnPoints:
   - {fileID: 1697348659}
   m_SpawnTime: 12
@@ -697,12 +697,12 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0}
   m_ScoreValue: 1
   m_Hit: 0
-  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Enemy: {fileID: 1089277760849248, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
   m_SpawnPoints:
   - {fileID: 1775803815}
   - {fileID: 922705871}
   - {fileID: 51078951}
-  m_Duck: {fileID: 0}
+  m_Duck: {fileID: 114397523937089154, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,12 +717,12 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0}
   m_ScoreValue: 1
   m_Hit: 0
-  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Enemy: {fileID: 1089277760849248, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
   m_SpawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 922705871}
-  m_Duck: {fileID: 0}
+  m_Duck: {fileID: 114397523937089154, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
 --- !u!114 &884234354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,12 +737,12 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0}
   m_ScoreValue: 1
   m_Hit: 0
-  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Enemy: {fileID: 1089277760849248, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
   m_SpawnPoints:
   - {fileID: 903200834}
   - {fileID: 922705871}
   - {fileID: 51078951}
-  m_Duck: {fileID: 0}
+  m_Duck: {fileID: 114397523937089154, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
 --- !u!114 &884234355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,12 +757,12 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0}
   m_ScoreValue: 1
   m_Hit: 0
-  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Enemy: {fileID: 1089277760849248, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
   m_SpawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 51078951}
-  m_Duck: {fileID: 0}
+  m_Duck: {fileID: 114397523937089154, guid: 8444d780010a0324fb4b53ff5d5e7480, type: 2}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808621488}
   - component: {fileID: 1808621487}
+  - component: {fileID: 1808621489}
   m_Layer: 0
   m_Name: Lake
   m_TagString: Untagged
@@ -978,3 +979,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1808621489
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808621486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

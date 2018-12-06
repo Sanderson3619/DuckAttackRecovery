@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/black/Documents/Duck Attack/Build/Duck Attack.exe
+C:/Users/chiru/Desktop/Home Works/CS 383/Unity_Games/Duck_Attack/Duck Attack.exe
 SceneListBegin?
 Assets/Scenes/Sean/StartMenu.unity
 Assets/Scenes/Sean/Defeat Menu.unity
@@ -43,7 +43,6 @@ f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventH
 26e77c7742043d03d320fc7a201351bf Assembly-CSharp.dll:Valve.VR.InteractionSystem.Hand
 fd3409c96bad3b015f871d2802596be4 Assembly-CSharp.dll:.EnemyPlayerTestScript
 7f81842e10f3b2a45544f51d5449fe14 Assembly-CSharp.dll:Valve.VR.InteractionSystem.SpawnAndAttachToHand
-b059b04f445e1b906b6ac333515c3dba Assembly-CSharp.dll:.Spawner
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 ed0e60824573d9be75e660ca0c0d7fe5 Assembly-CSharp.dll:.Player_Interaction
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -167,7 +166,6 @@ f7e702d969b324b11eb4b9572f5c2ed7 Assembly-CSharp.dll:Valve.VR.SteamVR_Behaviour_
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Game_BGMusic
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 d22c788799ee45d8676254eccf20e8b8 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
-3f12808417c2496dbab47d47104f1da8 Assembly-CSharp.dll:.Enemy2Behavior
 c0a3820239065c93997ace43b5bf70e0 Assembly-CSharp.dll:Valve.VR.InteractionSystem.SoundDeparent
 d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 486cd95c82d8305219c352c06b776e1f UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -187,7 +185,6 @@ b8afb12d8c5feef170e5cc7529ea88b4 Assembly-CSharp.dll:Valve.VR.InteractionSystem.
 8518c42861cd98ceea0f2bed9f374239 Assembly-CSharp.dll:Valve.VR.InteractionSystem.InteractableHoverEvents
 68e941d6af8ac8682f249fb2c8b5e00c Assembly-CSharp.dll:Valve.VR.InteractionSystem.LinearBlendshape
 afe1875ceb0f4b2322c28cd41247339f Assembly-CSharp.dll:Valve.VR.InteractionSystem.ControllerHoverHighlight
-3f12808417c2496dbab47d47104f1da8 Assembly-CSharp.dll:.ChickenBehavior
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 c40c01f303bcf63169217f5fd4b2caeb Assembly-CSharp.dll:Valve.VR.InteractionSystem.ControllerButtonHints
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Valve.VR.InteractionSystem.DontDestroyOnLoad
@@ -215,7 +212,6 @@ a2ba9e25b91fd3753f4c6bb79cc10af2 Assembly-CSharp.dll:Valve.VR.InteractionSystem.
 fa12910e8c2b13d10b5ca8351915dd48 Assembly-CSharp.dll:.scoreupdatescript
 eca4fe72d30b3756d649093558f6671d Assembly-CSharp.dll:Valve.VR.InteractionSystem.RenderModel
 aac6f844dd7866397f350794a44aeb2b Assembly-CSharp.dll:Valve.VR.SteamVR_TrackedObject
-e0f383d350c45671bbeda91c5152db74 Assembly-CSharp.dll:.Enemy2Manager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Valve.VR.SteamVR_Fade
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -298,3 +294,9 @@ ed2d483a453c5b94a7e0a50162a716cc Assembly-CSharp.dll:Valve.VR.SteamVR_Camera
 ff31c283a9bf38dce2fa1cc6c94fe6ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.HoverButton
 07a7308c023cd2041787b9cab4b03e01 Assembly-CSharp.dll:Valve.VR.SteamVR_Input_ActionSet_default_Out
 a2e73f44b1d3d61e84e08126fc7cde0a Assembly-CSharp.dll:.InteractionTest
+ddcae71b3f91386237efd012a9eef2be UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
+486cd95c82d8305219c352c06b776e1f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.TestResultRendererCallback
+b059b04f445e1b906b6ac333515c3dba Assembly-CSharp.dll:.Spawner
+3f12808417c2496dbab47d47104f1da8 Assembly-CSharp.dll:.Enemy2Behavior
+3f12808417c2496dbab47d47104f1da8 Assembly-CSharp.dll:.ChickenBehavior
+e0f383d350c45671bbeda91c5152db74 Assembly-CSharp.dll:.Enemy2Manager

@@ -27,9 +27,7 @@ public class EnemyManager : Duck_Movement
         cheatMode = m_Duck.m_GetGunNumber();
 
         // Invokes the spawn method after 0.1f second.
-        Invoke("spawn", 0.1f);
-        //InvokeRepeating("RedduckSpawn", 5f, 5f);
-        //InvokeRepeating("GreenduckSpawn", 3f, 4f);	
+        Invoke("spawn", 0.1f);	
     }
 
     void reLoadGame()
