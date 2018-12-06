@@ -19,6 +19,7 @@ public class Player_Interaction : GunSelection_Controller
     private int m_Gun = 1;
     public static int numBullets = 0;
     public string stringToEdit = "";
+    public static int score;
     // Choice of gun.
 
     // Use this for initialization.
@@ -76,6 +77,7 @@ public class Player_Interaction : GunSelection_Controller
         // Debug.Log(newPos);
         if (Input.GetMouseButtonDown(0) == true)
         {
+            score = Interaction.score;
             numBullets--;
             m_GunSound.Play();
             this.m_SpriteRenderer.transform.localScale -= new Vector3(0.05f, 0.05f, 0f);
@@ -86,8 +88,12 @@ public class Player_Interaction : GunSelection_Controller
 
             if(numBullets == 0)
             {
-                Cursor.visible = true;
-                SceneManager.LoadScene("Defeat Menu");
+                score = Interaction.score;
+                if(score <= 20)
+                {
+                    Cursor.visible = true;
+                    SceneManager.LoadScene("Defeat Menu");
+                }
             }
         }
     }

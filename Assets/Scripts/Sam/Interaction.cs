@@ -10,6 +10,7 @@ public class Interaction : Duck_Movement
     public string stringToEdit = " ";
     private Duck_Movement duckScore;
 
+
     // Use this for initialization
     void Start () {
         instruction = GetComponent<Text>();
@@ -63,5 +64,3 @@ public class Interaction : Duck_Movement
 
 
 }
-
-

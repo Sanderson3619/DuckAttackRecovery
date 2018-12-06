@@ -48,7 +48,7 @@ public class scoreupdatescript : Interaction
 
     IEnumerator ExecuteAfterTime()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1); //Abhilash changed it to 1s
 
         //Abhilash is making this change below
         Cursor.visible = true;
