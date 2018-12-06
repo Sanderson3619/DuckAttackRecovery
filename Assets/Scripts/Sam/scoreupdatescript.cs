@@ -52,7 +52,7 @@ public class scoreupdatescript : Interaction
 
         //Abhilash is making this change below
         Cursor.visible = true;
-       
+
         // Added by Sean - they won, go to win screen
         SceneManager.LoadScene("Victory Menu");
 

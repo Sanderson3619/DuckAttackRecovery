@@ -15,24 +15,44 @@ public class EnemyManager : Duck_Movement
 	public static int maxDucks = 0;
 
     private int cheatMode = 1;
-	
-	void Start()
-	{
-		// This calls the Duck_Movement script to the variable duck.
-		m_Duck = GetComponent<Duck_Movement>();
+
+    public static int reload = 0;
+
+    void Start()
+    {
+        // This calls the Duck_Movement script to the variable duck.
+        m_Duck = GetComponent<Duck_Movement>();
 
         //Abhi's code
         cheatMode = m_Duck.m_GetGunNumber();
-        Debug.Log("Gun in Chiru: " + cheatMode);
 
         // Invokes the spawn method after 0.1f second.
         Invoke("spawn", 0.1f);
-		//InvokeRepeating("RedduckSpawn", 5f, 5f);
-		//InvokeRepeating("GreenduckSpawn", 3f, 4f);	
-	}
+        //InvokeRepeating("RedduckSpawn", 5f, 5f);
+        //InvokeRepeating("GreenduckSpawn", 3f, 4f);	
+    }
 
-	// Update is called once per frame
-	void Update () {
+    void reLoadGame()
+    {
+        // This calls the Duck_Movement script to the variable duck.
+        m_Duck = GetComponent<Duck_Movement>();
+
+        //Abhi's code
+        cheatMode = m_Duck.m_GetGunNumber();
+
+        // Invokes the spawn method after 0.1f second.
+        Invoke("spawn", 0.1f);
+        //InvokeRepeating("RedduckSpawn", 5f, 5f);
+        //InvokeRepeating("GreenduckSpawn", 3f, 4f);	
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if(reload == 1)
+        {
+            reload = 0;
+            reLoadGame();
+        }
         // Checks if the duck is dead or alive by calling the duckCheck method in the Duck_Movement script.
         if (cheatMode != 4)
         {
