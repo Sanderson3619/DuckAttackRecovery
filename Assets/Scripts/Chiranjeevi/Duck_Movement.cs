@@ -54,6 +54,14 @@ public class Duck_Movement : GunSelection_Controller
         // Integer variable declared to get the Y position of the enemy. 
         int m_vectorY = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
+        if (m_vectorX == -7.0)
+        {
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
+        else if (m_vectorX == 7.0)
+        {
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
         // Boundaries of the duck to move between the screen.
         if (m_vectorX <= -7.2)
         {
