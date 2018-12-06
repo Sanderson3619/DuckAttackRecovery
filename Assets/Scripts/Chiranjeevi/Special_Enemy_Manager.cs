@@ -12,19 +12,33 @@ public class Special_Enemy_Manager : MonoBehaviour {
 	public static int s_SpecialDucks = 0;
 	public Duck_Movement m_Duck;
 	public EnemyManager m_CountDucks;
+    public static int replay = 0;
 
-	public static int s_SpecialDuck = 0;
+
+    public static int s_SpecialDuck = 0;
 	
 	void Start()
 	{
 		m_CountDucks = GetComponent<EnemyManager>();
 		InvokeRepeating("SpecialDuckspawn", m_SpawnTime, 15f);	
 	}
+
+    void replayGame()
+    {
+        s_SpecialDuck = 0;
+        s_SpecialDucks = 0;
+        m_CountDucks = GetComponent<EnemyManager>();
+        //InvokeRepeating("SpecialDuckspawn", m_SpawnTime, 15f);
+    }
 	
 	void Update()
 	{
-		// specialDuck = countDucks.duckCount();
-	}
+        if (replay == 1)
+        {
+            replayGame();
+            replay = 0;
+        }
+    }
 	// This method spawns the enemy from the spawn points declared in unity.
 	void SpecialDuckspawn()
 	{	

@@ -34,24 +34,25 @@ public class EnemyManager : Duck_Movement
 
     void reLoadGame()
     {
+        Debug.Log("Reloaded");
+        Special_Enemy_Manager.replay = 1;
         // This calls the Duck_Movement script to the variable duck.
         m_Duck = GetComponent<Duck_Movement>();
-
+        maxDucks = 0;
+        s_NoOfDucks = 0;
         //Abhi's code
         cheatMode = m_Duck.m_GetGunNumber();
 
         // Invokes the spawn method after 0.1f second.
-        Invoke("spawn", 0.1f);
-        //InvokeRepeating("RedduckSpawn", 5f, 5f);
-        //InvokeRepeating("GreenduckSpawn", 3f, 4f);	
+        Invoke("spawn", 0.1f);	
     }
 
     // Update is called once per frame
     void Update () {
         if(reload == 1)
         {
-            reload = 0;
             reLoadGame();
+            reload = 0;
         }
         // Checks if the duck is dead or alive by calling the duckCheck method in the Duck_Movement script.
         if (cheatMode != 4)
