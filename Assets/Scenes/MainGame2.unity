@@ -315,8 +315,8 @@ MonoBehaviour:
   - {fileID: 1204588903073318, guid: f90a77981f66f8a4fad5856205a5b228, type: 2}
   spawnValues: {x: 0, y: 0}
   spawnWait: 0
-  spawnMostWait: 4
-  spawnLeastWait: 2
+  spawnMostWait: 2
+  spawnLeastWait: 1
   startWait: 0
   stop: 0
   enemiesSpawned: 0
