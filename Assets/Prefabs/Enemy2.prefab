@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50844796075216274}
   - component: {fileID: 60016365194300978}
   - component: {fileID: 114884962768081154}
+  - component: {fileID: 82213460037756126}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: enemy2
@@ -166,6 +167,101 @@ PolygonCollider2D:
       - {x: 0.75, y: -2.3}
       - {x: 0.98999995, y: -2.27}
       - {x: 1.37, y: -2.1399999}
+--- !u!82 &82213460037756126
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204588903073318}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4bb078a75e30f17479350425de0a1476, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114884962768081154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,16 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  spawnTime: 5
-  spawnPoints: []
-  duck: {fileID: 0}
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
   stringToEdit: ' '
 --- !u!114 &114938723463707684
 MonoBehaviour:
@@ -196,10 +285,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204588903073318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51002d0c989f2fa4e93b559881130270, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d2d62c44962f354185220ce12305f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy2: {fileID: 0}
   position: {x: 0, y: 0}
 --- !u!212 &212874751681222806
 SpriteRenderer:

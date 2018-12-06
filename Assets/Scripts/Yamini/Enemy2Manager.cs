@@ -21,14 +21,15 @@ public class Enemy2Manager : MonoBehaviour {
 	
     void Spawn ()
     {
-               int startingSpawnPosition = Random.Range(0, spawnPoints.Length);
+        int startingSpawnPosition = Random.Range(0, 0);
+//        int startingSpawnPosition = Random.Range(0, spawnPoints.Length);
                {
                 // For test case - change the maximum number of enemeies to be spawed
                    if (maxEnemy2 < 6)
                    {
                        Instantiate(Enemy2, new Vector2(Random.Range(-7.2f, 7.2f), Random.Range(-3f, 3f)), Quaternion.identity);
-                numEnemy2++;
-                       maxEnemy2++;
+                        numEnemy2++;
+                        maxEnemy2++;
                    }
                    UnityEngine.Debug.Log(numEnemy2);
              }
