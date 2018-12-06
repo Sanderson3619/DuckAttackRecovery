@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6cede70ba50bda548b239d801d30c8bf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemy: {fileID: 1312872600176922, guid: d78ced32ee2ab4a4fb1de6b406664b27, type: 2}
+  - Duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  - countDucks: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
