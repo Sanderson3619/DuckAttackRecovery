@@ -10,6 +10,8 @@ public class Scene_Selection_Controller : MonoBehaviour
     public void Game1()
     {
         // Go to the main game
+        Interaction.score = 0;
+        EnemyManager.reload = 1;
         SceneManager.LoadScene("MainGame");
     }
 
@@ -17,6 +19,7 @@ public class Scene_Selection_Controller : MonoBehaviour
     public void Game2()
     {
         // Go to the main game
+        Interaction.score = 0;
         SceneManager.LoadScene("MainGame2");
     }
 
@@ -24,12 +27,14 @@ public class Scene_Selection_Controller : MonoBehaviour
     public void Game3()
     {
         // Go to the main game
+        Interaction.score = 0;
         SceneManager.LoadScene("MainGame3");
     }
 
     public void BackButton()
     {
         // Go to the last scene (GunSelection)
+        Interaction.score = 0;
         SceneManager.LoadScene("GunSelection");
     }
 }
